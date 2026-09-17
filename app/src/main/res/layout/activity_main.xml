@@ -1,83 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D3E3D8"
+    android:background="#CDDDD2"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/infoArea"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/m3_split_button_chevron_avd"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:orientation="vertical"
-        android:gravity="center"
-        android:paddingStart="5dp"
-        android:paddingTop="1dp"
-        android:paddingBottom="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-         >
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
-        <ImageView
-            android:id="@+id/imageLogo"
-            android:layout_width="64dp"
-            android:layout_height="80dp"
-            android:layout_marginBottom="16dp"
-            android:contentDescription="@string/app_name"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ImgemMedicina" />
 
-        <Space
+    <LinearLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="64dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ImgemMedicina"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <Space
             android:layout_width="match_parent"
             android:layout_height="20dp"/>
 
-        <LinearLayout
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:gravity="center"
-            android:background="@drawable/QrCode" />
-        <TextView
-                android:id="@+id/testLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Faça o seu login"
-                android:textColor="#FFFFFF"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="24dp"/>
-        <EditText
-                android:id="@+id/userName"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rouded_edittext"
-                android:hint="Usuário"
-                android:inputType="textPersonName"
-                android:textColor="#000000"
-                android:layout_marginBottom="16dp" />
-        <EditText
-                android:id="@+id/password"
+    <LinearLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/QrCode"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <TextView
+        android:id="@+id/textExamiCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ExamiCode"
+        android:textColor="#257A50"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Centro Médico"
+        android:textColor="#257A50"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="269dp"
+        />
+
+    <TextView
+        android:id="@+id/testLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endoscopia Digestiva"
+        android:textColor="#257A50"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:drawableStart="@drawable/Email"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="seu@email.com"
+        android:inputType="textEmailAddress"
+        android:textColor="#257A50"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    <EditText
+                android:id="@+id/editSenha"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:hint="Senha"
-                android:background="@drawable/rouded_edittext"
+                android:background="#FFFFFF"
                 android:inputType="textPassword"
+                android:drawableStart="@drawable/senha"
+                android:drawableEnd="@drawable/OlhoDeSenha"
                 android:textColor="#000000"
                 android:layout_marginBottom="16dp" />
-        <Button
-                android:id="@+id/buttonLogin"
-                android:layout_width="280dp"
-                android:layout_height="80dp"
-                android:text="Entrar"
-                android:backgroundTint="#3F8745"
-                android:textColor="#FFFFFF"/>
-    </LinearLayout>
+        <TextView
+            android:id="@+id/txtEsqueceuSenha"
+            android:layout_width="match_parent"
+            android:text="Esqueceu a senha?"
+            android:textColor="#257A50"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_height="match_parent"
+            />
+
+    <Button
+        android:id="@+id/btnAcessar"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#258447"
+        android:text="Acessar Sistema"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+        <TextView
+            android:id="@+id/ProblemasParaAcessar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:text="Problemas para acessar?"
+            android:gravity="center"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="4dp"
+        />
+
+
+
+</LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
