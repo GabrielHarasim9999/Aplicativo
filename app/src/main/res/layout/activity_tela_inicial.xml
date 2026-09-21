@@ -18,8 +18,8 @@
         android:contentDescription="Logo do Aplicativo"
         android:scaleTybe="fitCenter"
         android:src="@drawable/ImgemMedicina"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="134dp" />
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="135dp" />
 
     <Space
         android:layout_width="mactch_parent"
