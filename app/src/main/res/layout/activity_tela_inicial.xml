@@ -5,6 +5,50 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="32dp"
+    android:background="#CDDDD2"
     tools:context=".TelaInicial">
 
+    <ImageView
+        android:id="@id/imgLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:contentDescription="Logo do Aplicativo"
+        android:scaleTybe="fitCenter"
+        android:src="@drawable/ImgemMedicina"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <Space
+        android:layout_width="mactch_parent"
+        android:layout_height="40dp"/>
+
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Entrar como Administrador"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="425dp"
+        android:backgroundTint="#227125"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Entrar como Paciente"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="517dp"
+        android:backgroundTint="#227125"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
