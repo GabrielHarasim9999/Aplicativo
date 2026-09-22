@@ -98,8 +98,8 @@
         android:background="@drawable/bg_start_card"
         android:orientation="vertical"
         android:padding="16dp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="117dp" />
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="118dp" />
 
     <TextView
         android:layout_width="74dp"
