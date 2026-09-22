@@ -92,13 +92,13 @@
 
 
     <LinearLayout
-        android:layout_width="119dp"
-        android:layout_height="76dp"
+        android:layout_width="127dp"
+        android:layout_height="81dp"
         android:layout_weight="1"
         android:background="@drawable/bg_start_card"
         android:orientation="vertical"
         android:padding="16dp"
-        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteX="39dp"
         tools:layout_editor_absoluteY="117dp" />
 
     <TextView
@@ -121,14 +121,6 @@
         tools:layout_editor_absoluteY="152dp" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="0dp"/>
-
-
-
     <Space
     android:layout_width="12dp"
     android:layout_height="1dp"/>
@@ -136,8 +128,8 @@
     <!-- QR Codes -->
 
     <LinearLayout
-        android:layout_width="122dp"
-        android:layout_height="78dp"
+        android:layout_width="134dp"
+        android:layout_height="79dp"
         android:layout_weight="1"
         android:background="@drawable/bg_start_card2"
         android:orientation="vertical"
@@ -159,43 +151,90 @@
             android:text="182"
             android:textColor="#15871B"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </LinearLayout>
 
 
     <LinearLayout
         android:id="@+id/fundoVerde"
-        android:layout_width="311dp"
-        android:layout_height="123dp"
+        android:layout_width="340dp"
+        android:layout_height="166dp"
         android:background="@drawable/CardVerdeEscuro"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="210dp">
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="209dp">
+
 
         <LinearLayout
-            android:id="@+id/btnNovoQr"
-            android:layout_width="52dp"
-            android:layout_height="51dp"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
             android:background="@drawable/QrCode"
-            android:clickable="true"
-            android:focusable="true"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:layout_margin="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"/>
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
 
-        <LinearLayout
-            android:id="@+id/flecha"
-            android:layout_width="56dp"
-            android:layout_height="39dp"
-            android:background="@drawable/Flecha"
-            android:orientation="horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gerar Novo QR Code"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registre o paciente e vincule exames para disponibilizar no QR Code imediatamente"
+            android:textColor="#B9D7BB"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="0dp"
+            android:text="→"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="56dp"
+        android:background="#CDDDD2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="433dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Exames Recentes"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="403dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtVerTodos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Ver todos"
+        android:textColor="#4CAF50"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="403dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
