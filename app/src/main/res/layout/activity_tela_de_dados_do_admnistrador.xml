@@ -10,6 +10,45 @@
     tools:context="TelaDeDadosDoAdmnistrador">
 
     <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="88dp"
+        android:background="#CDDDD2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="433dp">
+
+        <LinearLayout
+            android:layout_width="27dp"
+            android:layout_height="23dp"
+            android:background="@drawable/bg_exam_card"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ana Beatriz Ramos"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="15dp"
+            android:text="Colonoscopia"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoje, 11:20 . CPF: 123.456.789-10"
+            android:textColor="#9EB0AE"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/header"
         android:layout_width="412dp"
         android:layout_height="93dp"
@@ -99,7 +138,9 @@
         android:orientation="vertical"
         android:padding="16dp"
         tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="118dp" />
+        tools:layout_editor_absoluteY="118dp" >
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="74dp"
@@ -204,13 +245,80 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="412dp"
-        android:layout_height="56dp"
+        android:layout_width="411dp"
+        android:layout_height="88dp"
         android:background="#CDDDD2"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="433dp" />
+        tools:layout_editor_absoluteY="433dp">
+
+        <LinearLayout
+            android:layout_width="27dp"
+            android:layout_height="23dp"
+            android:background="@drawable/bg_exam_card"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ana Beatriz Ramos"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="15dp"
+            android:text="Colonoscopia"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoje, 11:20 . CPF: 123.456.789-10"
+            android:textColor="#9EB0AE"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="31dp"
+        android:layout_height="26dp"
+        android:background="@drawable/bg_exam_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="549dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carlos Eduardo Santos"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoje, 09:15 • CPF: 987.654.321-00"
+        android:textColor="#9EB0AE"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="575dp" />
 
     <TextView
         android:layout_width="0dp"
@@ -235,6 +343,13 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="340dp"
         tools:layout_editor_absoluteY="403dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
