@@ -123,11 +123,11 @@
         android:paddingEnd="24dp"
         android:paddingTop="0dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="0dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="0dp"/>
 
 
     <LinearLayout
@@ -142,40 +142,40 @@
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="74dp"
-        android:layout_height="18dp"
-        android:text="Exames Hoje"
-        android:textColor="#7C7777"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="127dp" />
+        <TextView
+            android:layout_width="74dp"
+            android:layout_height="18dp"
+            android:text="Exames Hoje"
+            android:textColor="#7C7777"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="127dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="14"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="152dp" />
-
-
-    <Space
-    android:layout_width="12dp"
-    android:layout_height="1dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="14"
+                         android:textColor="#000000"
+                         android:textSize="25sp"
+                         android:textStyle="bold"
+                         tools:layout_editor_absoluteX="72dp"
+                         tools:layout_editor_absoluteY="152dp" />
 
 
-    <LinearLayout
-        android:layout_width="134dp"
-        android:layout_height="79dp"
-        android:layout_weight="1"
-        android:background="@drawable/bg_start_card2"
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="118dp">
+                     <Space
+                         android:layout_width="12dp"
+                         android:layout_height="1dp"/>
+
+
+         <LinearLayout
+                android:layout_width="134dp"
+                android:layout_height="79dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_start_card2"
+                android:orientation="vertical"
+                android:padding="16dp"
+                tools:layout_editor_absoluteX="227dp"
+                tools:layout_editor_absoluteY="118dp">
 
         <TextView
             android:layout_width="94dp"
@@ -349,6 +349,119 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:layout_marginStart="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="#CDDDD2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:elevation="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"><![CDATA[>
+
+        ]]>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="◷"
+            android:textColor="#000000"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Histórico"
+            android:textColor="#000000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="⌂"
+            android:textColor="#15871B"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Início"
+            android:textColor="#15871B"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="⊕"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novo Exame"
+            android:textColor="#000000"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+
+    <!-- ================= -->
+    <!-- INÍCIO -->
+    <!-- ================= -->
+
+    <LinearLayout
+        android:id="@+id/navInicio"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true">
+
+    </LinearLayout>
+
+
+    <!-- ================= -->
+    <!-- NOVO EXAME -->
+    <!-- ================= -->
+
+            <LinearLayout
+                android:id="@+id/navNovoExame"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+    </LinearLayout>
+
+
+    <!-- ================= -->
+    <!-- HISTÓRICO -->
+    <!-- ================= -->
+
+                    <LinearLayout
+                        android:id="@+id/navHistorico"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:focusable="true">
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
