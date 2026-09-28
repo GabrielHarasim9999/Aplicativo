@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">ExamiCode</string>
+    <string name="logo_desc">Logo do Aplicativo</string>
+    <string name="entrar_administrador">Entrar como Administrador</string>
+    <string name="entrar_paciente">Entrar como Paciente</string>
+    <string name="ola_bem_vindo">Olá, bem-vindo</string>
+    <string name="exames_hoje">Exames Hoje</string>
+    <string name="qr_codes_ativos">QR Codes Ativos</string>
+    <string name="gerar_novo_qr_code">Gerar Novo QR Code</string>
+    <string name="desc_gerar_qr_code">Registre o paciente e vincule exames para disponibilizar no QR Code imediatamente</string>
+    <string name="exames_recentes">Exames Recentes</string>
+    <string name="ver_todos">Ver todos</string>
+    <string name="historico">Histórico</string>
+    <string name="inicio">Início</string>
+    <string name="novo_exame">Novo Exame</string>
 </resources>
