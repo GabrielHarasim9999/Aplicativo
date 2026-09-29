@@ -106,7 +106,7 @@
                 android:layout_height="81dp"
                 android:orientation="horizontal">
 
-                <!-- Exames Hoje -->
+                <!-- EXAMES HOJE -->
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -139,7 +139,7 @@
                     android:layout_height="1dp" />
 
 
-                <!-- QR Codes Ativos -->
+                <!-- QR CODES ATIVOS -->
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -234,7 +234,7 @@
 
 
             <!-- ========================= -->
-            <!-- TÍTULO EXAMES RECENTES -->
+            <!-- EXAMES RECENTES -->
             <!-- ========================= -->
 
             <LinearLayout
@@ -280,7 +280,7 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp">
 
-                <!-- Ícone -->
+                <!-- ÍCONE -->
 
                 <LinearLayout
                     android:layout_width="27dp"
@@ -289,7 +289,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" />
 
-                <!-- Informações do exame -->
+                <!-- INFORMAÇÕES -->
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -322,7 +322,7 @@
 
                 </LinearLayout>
 
-                <!-- Status -->
+                <!-- STATUS -->
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -349,7 +349,7 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp">
 
-                <!-- Ícone -->
+                <!-- ÍCONE -->
 
                 <LinearLayout
                     android:layout_width="31dp"
@@ -358,7 +358,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" />
 
-                <!-- Informações do exame -->
+                <!-- INFORMAÇÕES -->
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -374,8 +374,6 @@
                         android:textColor="#000000"
                         android:textSize="14sp"
                         android:textStyle="bold" />
-
-                    <!-- NOVO: exame -->
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -393,13 +391,82 @@
 
                 </LinearLayout>
 
-                <!-- Status -->
+                <!-- STATUS -->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Disponível"
                     android:textColor="#15871B"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- ========================= -->
+            <!-- EXAME MARIANA SOUZA LIMA -->
+            <!-- ========================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="6dp"
+                android:background="#CDDDD2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <!-- ÍCONE -->
+
+                <LinearLayout
+                    android:layout_width="31dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/bg_exam_card"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+
+                <!-- INFORMAÇÕES -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mariana Souza Lima"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Colonoscopia"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ontem • CPF: 456.789.123-22"
+                        android:textColor="#9EB0AE"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <!-- STATUS -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Em análise"
+                    android:textColor="#B8860B"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
