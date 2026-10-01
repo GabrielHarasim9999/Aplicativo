@@ -33,10 +33,15 @@ public class MainActivity extends AppCompatActivity {
             String username = editUserName.getText().toString().trim();
             String password = editPassword.getText().toString().trim();
 
-            if(username.equals("admin") && password.equals("123")){
-                Intent intent = new Intent(MainActivity.this, TelaDoAdministrador.class);
+            if(username.equals("administrador") && password.equals("123")) {
+                Intent intent = new Intent(MainActivity.this, TelaInicial.class);
                 startActivity(intent);
-            }else{
+            } else if (username.equals("paciente") && password.equals("123")) {
+
+                Intent intent = new Intent(MainActivity.this, TelaDeDadosDoPaciente.class);
+                startActivity(intent);
+
+        }else{
                 Toast.makeText(this, "Usuário e senha incorretos!", Toast.LENGTH_SHORT).show();
             }
         });

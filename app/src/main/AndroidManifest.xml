@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TelaDoAdministrador"
+            android:name=".CadastroDoPaciente"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -38,11 +38,11 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".historicodeexames"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".tela_qr_code_gerado"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
