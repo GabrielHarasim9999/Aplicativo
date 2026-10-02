@@ -15,36 +15,26 @@ public class CadastroDoPaciente extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_tela_de_dados_do_paciente);
+        setContentView(R.layout.activity_tela_do_administrador);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-
-            Insets systemBars = insets.getInsets(
-                    WindowInsetsCompat.Type.systemBars()
-            );
-
-            v.setPadding(
-                    systemBars.left,
-                    systemBars.top,
-                    systemBars.right,
-                    systemBars.bottom
-            );
-
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button btnContinuar = findViewById(R.id.btnAcessar);
+        Button btnGerarQrCode = findViewById(R.id.btnGerarQrCode);
+        if (btnGerarQrCode != null) {
+            btnGerarQrCode.setOnClickListener(v -> {
+                Intent intent = new Intent(CadastroDoPaciente.this, tela_qr_code_gerado.class);
+                startActivity(intent);
+            });
+        }
 
-        btnContinuar.setOnClickListener(v -> {
-
-            Intent intent = new Intent(
-                    CadastroDoPaciente.this,
-                    TelaDeDadosDoPaciente.class
-            );
-
-            startActivity(intent);
-        });
+        Button btnVoltar = findViewById(R.id.btnVoltar);
+        if (btnVoltar != null) {
+            btnVoltar.setOnClickListener(v -> finish());
+        }
     }
 }

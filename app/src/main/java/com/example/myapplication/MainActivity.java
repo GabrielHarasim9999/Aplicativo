@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //EdgeToEdge.enable(this);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -29,21 +30,21 @@ public class MainActivity extends AppCompatActivity {
         EditText editPassword = findViewById(R.id.password);
         Button buttonLogin = findViewById(R.id.buttonLogin);
 
-        buttonLogin.setOnClickListener(v-> {
-            String username = editUserName.getText().toString().trim();
-            String password = editPassword.getText().toString().trim();
+        if (buttonLogin != null) {
+            buttonLogin.setOnClickListener(v -> {
+                String username = editUserName != null ? editUserName.getText().toString().trim() : "";
+                String password = editPassword != null ? editPassword.getText().toString().trim() : "";
 
-            if(username.equals("administrador") && password.equals("123")) {
-                Intent intent = new Intent(MainActivity.this, TelaInicial.class);
-                startActivity(intent);
-            } else if (username.equals("paciente") && password.equals("123")) {
-
-                Intent intent = new Intent(MainActivity.this, TelaDeDadosDoPaciente.class);
-                startActivity(intent);
-
-        }else{
-                Toast.makeText(this, "Usuário e senha incorretos!", Toast.LENGTH_SHORT).show();
-            }
-        });
+                if (username.equals("administrador") && password.equals("123")) {
+                    Intent intent = new Intent(MainActivity.this, TelaDeDadosDoAdministrador.class);
+                    startActivity(intent);
+                } else if (username.equals("paciente") && password.equals("123")) {
+                    Intent intent = new Intent(MainActivity.this, TelaDeDadosDoPaciente.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(this, "Usuário e senha incorretos!", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 }

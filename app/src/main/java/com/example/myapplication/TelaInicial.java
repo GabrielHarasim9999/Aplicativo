@@ -20,29 +20,32 @@ public class TelaInicial extends AppCompatActivity {
         setContentView(R.layout.activity_tela_inicial);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-
             v.setPadding(
                     systemBars.left,
                     systemBars.top,
                     systemBars.right,
                     systemBars.bottom
             );
-
             return insets;
         });
 
-        Button btnCadastro = findViewById(R.id.btnEntrar);
+        // Botão Entrar como Administrador -> MainActivity (Login)
+        Button btnEntrar = findViewById(R.id.btnEntrar);
+        if (btnEntrar != null) {
+            btnEntrar.setOnClickListener(v -> {
+                Intent intent = new Intent(TelaInicial.this, MainActivity.class);
+                startActivity(intent);
+            });
+        }
 
-        btnCadastro.setOnClickListener(v -> {
-
-            Intent intent = new Intent(
-                    TelaInicial.this,
-                    CadastroDoPaciente.class
-            );
-
-            startActivity(intent);
-        });
+        // Botão Entrar como Paciente -> TelaDeDadosDoPaciente
+        Button btnCadastrar = findViewById(R.id.btnCadastrar);
+        if (btnCadastrar != null) {
+            btnCadastrar.setOnClickListener(v -> {
+                Intent intent = new Intent(TelaInicial.this, TelaDeDadosDoPaciente.class);
+                startActivity(intent);
+            });
+        }
     }
 }

@@ -37,14 +37,14 @@ public class TelaDeDadosDoPaciente extends AppCompatActivity {
 
         Button btnHistorico = findViewById(R.id.btnAcessar);
 
-        btnHistorico.setOnClickListener(v -> {
-
-            Intent intent = new Intent(
-                    TelaDeDadosDoPaciente.this,
-                    historicodeexames.class
-            );
-
-            startActivity(intent);
-        });
+        if (btnHistorico != null) {
+            btnHistorico.setOnClickListener(v -> {
+                Intent intent = new Intent(
+                        TelaDeDadosDoPaciente.this,
+                        historicodeexames.class
+                );
+                startActivity(intent);
+            });
+        }
     }
 }
