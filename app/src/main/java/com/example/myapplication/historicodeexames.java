@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,5 +23,23 @@ public class historicodeexames extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Bottom Nav: Início -> TelaDeDadosDoAdministrador
+        LinearLayout navInicio = findViewById(R.id.navInicio);
+        if (navInicio != null) {
+            navInicio.setOnClickListener(v -> {
+                Intent intent = new Intent(historicodeexames.this, TelaDeDadosDoAdministrador.class);
+                startActivity(intent);
+            });
+        }
+
+        // Bottom Nav: Novo Exame -> CadastroDoPaciente
+        LinearLayout navNovoExame = findViewById(R.id.navNovoExame);
+        if (navNovoExame != null) {
+            navNovoExame.setOnClickListener(v -> {
+                Intent intent = new Intent(historicodeexames.this, CadastroDoPaciente.class);
+                startActivity(intent);
+            });
+        }
     }
 }

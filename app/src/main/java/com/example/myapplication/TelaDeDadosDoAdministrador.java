@@ -25,6 +25,17 @@ public class TelaDeDadosDoAdministrador extends AppCompatActivity {
             return insets;
         });
 
+        // Botão Fechar (×) -> Retornar para TelaInicial
+        TextView btnClose = findViewById(R.id.btnClose);
+        if (btnClose != null) {
+            btnClose.setOnClickListener(v -> {
+                Intent intent = new Intent(TelaDeDadosDoAdministrador.this, TelaInicial.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                finish();
+            });
+        }
+
         // Fundo Verde (Gerar Novo QR Code) -> CadastroDoPaciente
         LinearLayout fundoVerde = findViewById(R.id.fundoVerde);
         if (fundoVerde != null) {
