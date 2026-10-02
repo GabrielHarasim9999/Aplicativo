@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -36,9 +37,21 @@ public class tela_qr_code_gerado extends AppCompatActivity {
             return insets;
         });
 
+        // Botão Voltar (seta superior)
         Button btnVoltar = findViewById(R.id.btnVoltar);
         if (btnVoltar != null) {
             btnVoltar.setOnClickListener(v -> finish());
+        }
+
+        // Botão Voltar para o Início -> Retorna para TelaDeDadosDoAdministrador
+        Button btnVoltarInicio = findViewById(R.id.btnVoltarInicio);
+        if (btnVoltarInicio != null) {
+            btnVoltarInicio.setOnClickListener(v -> {
+                Intent intent = new Intent(tela_qr_code_gerado.this, TelaDeDadosDoAdministrador.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                finish();
+            });
         }
     }
 }
