@@ -186,7 +186,7 @@
                 android:id="@+id/fundoVerde"
                 android:layout_width="match_parent"
                 android:layout_height="166dp"
-                android:background="@drawable/CardVerdeEscuro"
+                android:background="@drawable/cardverdeescuro"
                 android:clickable="true"
                 android:focusable="true"
                 android:orientation="vertical"
@@ -195,7 +195,7 @@
                 <LinearLayout
                     android:layout_width="41dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/QrCode"
+                    android:background="@drawable/qrcode"
                     android:gravity="center" />
 
                 <TextView

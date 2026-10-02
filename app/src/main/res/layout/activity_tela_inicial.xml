@@ -26,7 +26,7 @@
             android:layout_height="180dp"
             android:contentDescription="@string/logo_desc"
             android:scaleType="fitCenter"
-            android:src="@drawable/ImgemMedicina" />
+            android:src="@drawable/imgemmedicina" />
 
         <Space
             android:layout_width="match_parent"

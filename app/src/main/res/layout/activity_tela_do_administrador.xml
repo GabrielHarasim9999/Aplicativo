@@ -266,7 +266,7 @@
                     android:layout_width="22dp"
                     android:layout_height="22dp"
                     android:gravity="center"
-                   android:background="@drawable/Email"
+                   android:background="@drawable/email"
                     android:textColor="#08751C"
                     android:textSize="20sp" />
 

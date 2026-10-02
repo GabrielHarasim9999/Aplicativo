@@ -122,7 +122,7 @@
                     android:id="@+id/imgQrCode"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/QrCode"
+                    android:background="@drawable/qrcode"
                     android:contentDescription="QR Code"
                     android:padding="40dp"
                     android:scaleType="fitCenter" />
@@ -185,7 +185,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+     <Button
         android:id="@+id/btnCompartilhar"
         android:layout_width="0dp"
         android:layout_height="52dp"
